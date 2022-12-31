@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Shade&family=Lobster&family=Merriweather:wght@300&family=Pacifico&display=swap');
+.title{
+  font-family: Bungee Shade;
+  font-size:5em;
+  text-align: center;
+  color: magenta;
+}
+img, iframe{
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  border: 10px solid gold ;
+  border-radius: 20px;
+  padding:10px;
+}  
+body{
+  background-color: black;
+  text-align: center;
+}
+button{
+  background-color: cyan;
+  font-family: Pacifico;
+  font-size: 24px;
+  color: black;
+  border-radius: 10px;
+} 
+.strong{
+  color:magenta;
+  background-color:cyan;
+}
+p{
+  font-family:Merriweather:wght@300;
+  font-size:24px;
+  text-align: justify;
+  color: orange;
+}
+a{
+  font-size: 24px;
+  font-family:Merriweather:wght@300;
+  color:blue;
+  background-color: orange;
+  transition: 1s;
+} 
+a:hover{
+  color:orange;
+  background-color: blue;
+  transition: 1s;
+}  
+h1{
+  font-family:Black Ops One;
+  color: blue;
+  font-size:36px;
+}
+h2{
+  font-family:Black Ops One;
+  color: blue;
+  font-size:30px;
+}
+h3{
+  font-family:Black Ops One;
+  color: blue;
+  font-size:24px;
+}
+h4{
+  font-family:Black Ops One;
+  color: blue;
+  font-size:18px;
+}
