@@ -3,7 +3,7 @@ function save(){
   setCookie("comment",document.forms["form"]["comment"].value,30);
 }
 function findMe(){
-	document.getElementById("info").innerHTML = "Comment: "+getCookie("name") + "Comment: "+getCookie("comment");
+	document.getElementById("info").innerHTML = "Name: "+getCookie("name") + "Comment: "+getCookie("comment");
 }
 function setCookie(cname, cvalue, exdays) {
   const d = new Date();
