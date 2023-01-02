@@ -2,6 +2,9 @@ function save(){
   setCookie("name",document.forms["form"]["name"].value,30);
   setCookie("comment",document.forms["form"]["comment"].value,30);
 }
+function findMe(){
+	document.getElementById("info").innerHTML = "Comment: "+getCookie("name") + "Comment: "+getCookie("comment");
+}
 function setCookie(cname, cvalue, exdays) {
   const d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
