@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator</title>
+		<link rel="stylesheet" href="https://mastercoder1323.github.io/CSS/light.css">
+	</head>
+	<body>
+		<h1 class = "title">Calculator</h1>
+		<div class="inputs">
+  			<input type="number" id="first#">
+  			<select id="operation">
+    			<option value="A">Plus</option>
+    			<option value="S">Minus</option>
+    			<option value="M">times</option>
+    			<option value="D">divided by</option>
+    			<option value="P">to the power of</option>
+  			</select>
+  			<input type="number" id="second#">
+  			<br><br>
+  			<button onclick="calc()">Calculate</button>
+		</div>
+		<p id="result">Result</p>
+		<script>
+			function calc(){
+  				if(document.getElementById("operation").value == "A"){
+  				 	var result1 = Number(document.getElementById("first#").value) + Number(document.getElementById("second#").value) 
+  				}else if(document.getElementById("operation").value == "S"){
+    				var result1 = Number(document.getElementById("first#").value) - Number(document.getElementById("second#").value)
+  				}else if(document.getElementById("operation").value == "M"){
+    				var result1 = Number(document.getElementById("first#").value) * Number(document.getElementById("second#").value)
+  				}else if(document.getElementById("operation").value == "D"){
+    				var result1 = Number(document.getElementById("first#").value) / Number(document.getElementById("second#").value)
+  				}else if(document.getElementById("operation").value == "P"){
+    				var result1 = Math.pow(Number(document.getElementById("first#").value), Number(document.getElementById("second#").value))
+  				}
+  				console.log(result);
+  				document.getElementById("result").innerHTML = result1;
+  				setCookie("Previous_Result",result1,30);
+			}
+			function setCookie(cname, cvalue, exdays) {
+				const d = new Date();
+				d.setTime(d.getTime() + (exdays*24*60*60*1000));
+				let expires = "expires="+ d.toUTCString();
+				document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+			}
+		</script>
+	</body>
+</html>
