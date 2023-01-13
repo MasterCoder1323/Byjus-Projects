@@ -6,9 +6,6 @@ var albumCovers = [
     "https://i.scdn.co/image/ab67616d00001e022f2623c93d48a736c6f23cef"
 ]
 var player = new album(songAlbum,photos,"player","cover");
-function playPauseM(){
-    
-}
 //Span & Div click
 function spanC(){
     console.log("This is a Span");
